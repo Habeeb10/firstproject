@@ -1,22 +1,40 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./component/header";
 
 function App() {
-  const [name, setname] = useState("");
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code> src / App.js </code> and se to reloa.{" "}
-        </p>
-        <button onClick={() => setname("Eyo")}>SetName</button>
-        {name.length && <h1>yes...length is tru</h1>}
-      </header>
+    <div className="container">
+      <Header />
+      <div className="imageandtext">
+        <div className="text">
+          <h1>A new model for open collaboration</h1>
+          <p>
+            Run an organization where members get rewarded for their
+            contributions with fractional ownership
+          </p>
+          <button>Request early access</button>
+        </div>
+        <div className="photo">
+          <img src={require("../../src/bg.png")} />
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// class App2 extends React.Component {
+//   state = {
+//     name: "dgdgg",
+//   };
+//   render() {
+//     return (
+//       <div className="App">
+//         <h1>{this.state.name}</h1>
+//         <button onClick={() => this.setState({ name: "malik" })}></button>
+//       </div>
+//     );
+//   }
+// }
