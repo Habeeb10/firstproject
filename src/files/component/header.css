@@ -1,0 +1,14 @@
+.header {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.textList {
+  flex-direction: row;
+  display: flex;
+}
+h6 {
+  margin-left: 45px;
+}
